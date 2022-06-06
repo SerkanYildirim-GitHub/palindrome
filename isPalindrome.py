@@ -20,3 +20,11 @@ def isPalindrome(word):
         print("Invalid selection. BYE!")
         pass
 isPalindrome(word)
+
+
+# Remove spaces from palindrome sentence
+
+sentence = "This is a test sentence"
+print(sentence)
+new_sentence = sentence.replace(' ', '')
+print(new_sentence)
