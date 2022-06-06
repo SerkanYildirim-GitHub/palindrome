@@ -1,8 +1,9 @@
 # a simple code to check if a user input is palindrome or not.
 # Function to check the input and the "reverse of input" equals
 import string
+
 word = ""
-def isPalindrome(word):
+def isPalindrome():
     # Get input word from user to check if it is Palindrome 
     ask = input("Which word would you like to check if it is a palindrome ?") 
     # remove spaces if user input is a sentence
@@ -17,10 +18,12 @@ def isPalindrome(word):
     word = input("Want to check another word? (y)es / (n)o ")
     
     if word.lower() == "y":
-        isPalindrome(ask)
+        isPalindrome()
     elif word.lower() =="n":
         print("Thank you for using our automated palindrome service. Bye! ")
     else:
         print("Invalid selection. BYE!")
         pass
-isPalindrome(word)
+
+if __name__ == "__main__":
+    isPalindrome()
