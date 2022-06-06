@@ -5,7 +5,7 @@ import string
 word = ""
 def isPalindrome():
     # Get input word from user to check if it is Palindrome 
-    ask = input("Which word would you like to check if it is a palindrome ?") 
+    ask = input("Which word would you like to check if it is a palindrome? ") 
     # remove spaces if user input is a sentence
     no_space = ask.replace(' ', '')
     # convert all letters to lowercase
@@ -14,9 +14,9 @@ def isPalindrome():
         print(f"\nYes! the word \"{ask}\" is a palindrome.!\n--------------------------------------------")
     else:
         print(f"\nNo, the word \"{ask}\" is NOT a palindrome.!\n--------------------------------------------")
-    
+    # asking for user input whether they want to check a new wordor not
     word = input("Want to check another word? (y)es / (n)o ")
-    
+    # converting the user input to lowercase 
     if word.lower() == "y":
         isPalindrome()
     elif word.lower() =="n":
